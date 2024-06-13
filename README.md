@@ -1,6 +1,6 @@
 # To-Do-List
 
-Task Manager Application<br>
+To-Do List Application<br>
 <br>
 This application allows users to manage their tasks. Users can add new tasks, mark tasks as completed, and remove tasks. The total number of tasks and the number of completed tasks are displayed.<br>
 
