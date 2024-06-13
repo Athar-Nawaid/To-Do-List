@@ -1,0 +1,135 @@
+#outerContainer{
+    height: 100vh;
+    width: 100vw;
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: linear-gradient(to bottom right,rgb(100, 20, 107), rgb(15, 15, 59));
+}
+
+#container{
+    position: relative;
+    border: solid red 2px;
+    border-radius: 5vh;
+    background-color: rgb(255, 255, 254);
+    min-height: 30vh;
+    width: 30vw;
+    margin: 0 auto 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    top: 10vh;
+}
+heading{
+    display: flex;
+    margin-top: 2rem;
+    color: rgb(31, 11, 61);
+}
+#logo {
+    height: 8vh;
+    width: 8vh;
+    margin-left: 1rem;
+}
+
+#inputSpace{
+    /* border: solid rgb(0, 255, 64) 2px; */
+    width: 25vw;
+    height: 5vh;
+    background-color: rgb(224, 221, 221);
+    border-radius: 10PX;
+    padding: 0 0 0 10px;
+}
+
+#newTaskIn{
+    flex: 1;
+    height: 5vh;
+    width: 17vw;
+    font-size: 1rem;
+    border: none;
+    outline: none;
+    background: none;
+}
+
+#newTaskBtn{
+    height: 5vh;
+    width: 6vw;
+    font-size: 1rem;
+    border-radius: 10px;
+    border: none;
+    background-color: blueviolet;
+    margin-left: 1rem;
+    cursor: pointer;
+    color: white;
+}
+
+#cont{
+    /* border: solid 2px blue; */
+    min-height: 20vh;
+    width: 30vw;
+}
+
+ul li{
+    list-style: none;
+    font-size: 1.3rem;
+    position: relative;
+    width: 25vw;
+    height: 4vh;
+    cursor: pointer;
+}
+
+ul li::before{
+    content: "";
+    position: absolute;
+    height: 1rem;
+    width: 1rem;
+    background-size: cover;
+    background-image: url(uncheck.png);
+    left: -1.5vw; 
+    top: 5px;
+    
+}
+
+.checked{
+    text-decoration: line-through;
+}
+
+.checked::before{
+    background-image: url(checked.svg);
+}
+
+#listCont li span{
+    position: absolute;
+    width: 4vh;
+    height: 4vh;
+    font-size: 25px;
+    top: 0px;
+    right: 0;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+#listCont li span:hover{
+    background-color: rgb(224, 221, 221);;
+}
+
+
+#count{
+    /* border: solid 2px rgb(255, 0, 0); */
+    width:30vw ;
+    height: 5vh;
+    font-size: 1rem;
+    margin-left: 3vw;
+    font-weight: 600;
+    font-style: italic;
+}
+#completed{
+    margin-left: 5vw;
+}
+
+
+#author{
+    position: absolute;
+    color: white;
+    top: 80vh;
+    right: 2vw;
+    font-style: italic;
+}
