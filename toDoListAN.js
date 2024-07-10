@@ -25,7 +25,7 @@ newTaskBtn.addEventListener('click',()=>{
         total++;
     }    
     newTaskIn.value="";
-    updateCount()
+    updateCount();
 })
 
 listCont.addEventListener('click',(element)=>{
